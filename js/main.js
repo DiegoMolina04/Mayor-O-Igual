@@ -13,6 +13,7 @@ function addFix(){
     $('#cajaEnviar').addClass('fix');
     $('#cajaLimpiar').addClass('fix');
     $('#botonResponsive').addClass('fix');
+    $('#desplegable').addClass('fix');
 }
 
 /*Remueve los arreglos responsive y muestra la página original*/
@@ -24,6 +25,7 @@ function removeFix(){
     $('#cajaEnviar').removeClass('fix');
     $('#cajaLimpiar').removeClass('fix');
     $('#botonResponsive').removeClass('fix');
+    $('#desplegable').removeClass('fix');
 }
 
 function reportWindowSize() {

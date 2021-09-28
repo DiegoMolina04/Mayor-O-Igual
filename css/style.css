@@ -126,13 +126,17 @@ h6{
     display: none;
 }
 
+#desplegable{
+
+    display: none;
+
+}
+
 .contenedor.fix{
 
     background-color: aqua;
 
-
 }
-
 
 #cajaNum1.fix{
 
@@ -162,6 +166,12 @@ h6{
 
 #botonResponsive.fix{
 
+    display: block;
+
+}
+
+#desplegable.fix{
+    
     display: block;
 
 }
