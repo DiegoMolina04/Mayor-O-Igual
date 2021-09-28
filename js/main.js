@@ -1,6 +1,30 @@
 
+/*Se verifica el tamaño de pantalla*/
+reportInitialScreen(window.screen.width);
 
+/*Cada vez que se modifica el tamaño de la página, llama a la funcion reportWindowSize*/
 window.onresize = reportWindowSize;  
+
+/*Agrega los arreglos para responsive en diferentes dispositivos*/
+function addFix(){
+    $('.contenedor').addClass('fix');
+    $('#cajaNum1').addClass('fix');
+    $('#cajaNum2').addClass('fix');
+    $('#cajaEnviar').addClass('fix');
+    $('#cajaLimpiar').addClass('fix');
+    $('#botonResponsive').addClass('fix');
+}
+
+/*Remueve los arreglos responsive y muestra la página original*/
+function removeFix(){
+    /*JQuery*/
+    $('.contenedor').removeClass('fix');
+    $('#cajaNum1').removeClass('fix');
+    $('#cajaNum2').removeClass('fix');
+    $('#cajaEnviar').removeClass('fix');
+    $('#cajaLimpiar').removeClass('fix');
+    $('#botonResponsive').removeClass('fix');
+}
 
 function reportWindowSize() {
     
@@ -9,17 +33,30 @@ function reportWindowSize() {
     var ancho = window.innerWidth
 
     if(ancho > 958){
-        $('.contenedor').removeClass('fix');
-        $('#derecha').removeClass('fix');
+        
+        removeFix();
+
     }else{
-        $('.contenedor').addClass('fix');
-        $('#derecha').addClass('fix');
+
+        addFix();
+       
     }
     
 }
 
+function reportInitialScreen(tamañoInicial){
 
-  
+    if(tamañoInicial<750){
+        
+        addFix();
+
+    }else{
+        
+        removeFix();
+
+    }
+
+}
 
 function enviar(){
     

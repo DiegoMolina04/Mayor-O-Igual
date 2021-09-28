@@ -23,13 +23,13 @@ h1{
 }
 
 
-#izquierda, #derecha{
+#cajaNum1, #cajaNum2{
     
     width: 50%;
     padding: 0px;
 }
 
-#izquierda{
+#cajaNum1{
 
     
 
@@ -44,7 +44,7 @@ h1{
 
 }
 
-#derecha{
+#cajaNum2{
 
     
 
@@ -122,6 +122,10 @@ h6{
     
 }
 
+#botonResponsive{
+    display: none;
+}
+
 .contenedor.fix{
 
     background-color: aqua;
@@ -129,11 +133,35 @@ h6{
 
 }
 
-#derecha.fix{
+
+#cajaNum1.fix{
+
+    width: 100%;
+    
+}
+
+#cajaNum2.fix{
 
     clear: both;
     float: left;
+    width: 100%;
     
-    
+}
+
+#cajaEnviar.fix{
+
+    display: none;
+
+}
+
+#cajaLimpiar.fix{
+
+    display: none;
+
+}
+
+#botonResponsive.fix{
+
+    display: block;
 
 }

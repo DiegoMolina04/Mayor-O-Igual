@@ -22,14 +22,14 @@
 
     <div id="caja" class="contenedor">
         
-        <div id="izquierda">
+        <div id="cajaNum1">
 
             <h6>Ingrese número 1</h6>
             <input id="numero1" type="number" class="form-control">
 
         </div>
 
-        <div id="derecha">
+        <div id="cajaNum2">
 
             <h6>Ingrese número 2</h6>
             <input id="numero2" type="number" class="form-control">
@@ -43,16 +43,29 @@
         </div>
         
         <!-- Botones con eventos que son funciones en el Js -->
+        <!-- class="navbar-toggler" -->
 
-        <div id="cajaEnviar">
+        <select >
+
+          <option selected>Opciones</option>
+          <option onclick="enviar()">Enviar</option>
+          <option onclick="limpiar()">Limpiar</option>
+
+        </select> 
+
+        <div id="contenedorBotones">
+
+          <div id="cajaEnviar">
            
-           <button id="enviar" type="submit" class="btn btn-success" onclick="enviar()">Enviar</button>
-           
-        </div>
-
-        <div id="cajaLimpiar">
-
-            <button id="limpiar" type="submit" class="btn btn-info" onclick="limpiar()">Limpiar</button>
+            <button id="enviar" type="submit" class="btn btn-success" onclick="enviar()">Enviar</button>
+            
+          </div>
+ 
+          <div id="cajaLimpiar">
+ 
+             <button id="limpiar" type="submit" class="btn btn-info" onclick="limpiar()">Limpiar</button>
+ 
+          </div>
 
         </div>
 
